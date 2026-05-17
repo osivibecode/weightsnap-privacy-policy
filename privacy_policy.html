@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - WeightSnap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #070B19;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.06);
+            --primary-gradient: linear-gradient(135deg, #6366F1 0%, #3B82F6 100%);
+            --text-primary: #F1F5F9;
+            --text-secondary: #94A3B8;
+            --accent-glow: rgba(99, 102, 241, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 40%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .logo-icon {
+            font-size: 3.5rem;
+            margin-bottom: 12px;
+            display: inline-block;
+            filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.3));
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #CBD5E1;
+            margin-bottom: 24px;
+            font-size: 1.05rem;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.45rem;
+            font-weight: 700;
+            margin: 32px 0 16px 0;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            border-left: 3px solid #6366F1;
+            padding-left: 12px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 24px;
+        }
+
+        li {
+            color: #CBD5E1;
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            font-size: 1.02rem;
+        }
+
+        li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: #6366F1;
+            font-size: 0.9rem;
+            top: 1px;
+        }
+
+        .highlight-box {
+            background: rgba(99, 102, 241, 0.08);
+            border: 1px dashed rgba(99, 102, 241, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0 30px 0;
+            color: #E2E8F0;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 24px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 12px;
+            }
+            .card {
+                padding: 24px 16px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="logo-icon">⚖️</span>
+            <h1>WeightSnap</h1>
+            <div class="subtitle">Privacy Policy</div>
+        </header>
+
+        <main class="card">
+            <p><strong>Last Updated: May 17, 2026</strong></p>
+            
+            <p>WeightSnap (referred to as "the Application", "we", "us", or "our") is a fully local, offline weight and body metric tracking application built to respect and protect your privacy.</p>
+
+            <p>This Privacy Policy explains how your information is handled. Unlike traditional fitness and tracking applications, <strong>WeightSnap does not collect, store, or transmit your personal data to any external servers.</strong></p>
+
+            <div class="highlight-box">
+                Core Philosophy: Your health metrics are personal. We ensure they remain 100% private and on your device.
+            </div>
+
+            <h2>1. Core Privacy Philosophy: 100% Local Control</h2>
+            <p>We believe that your personal health and body metrics are your private business. WeightSnap is engineered with a local-first privacy architecture:</p>
+            <ul>
+                <li><strong>Offline Architecture:</strong> The Application operates entirely on your physical device. It does not require or request internet connectivity to execute its core operations.</li>
+                <li><strong>No Cloud Database:</strong> All body metric history (weight, waist measurements, timestamps, age, and gender preferences) is saved directly onto your device's internal SQLite database via secure, localized application sandbox storage.</li>
+                <li><strong>On-Device AI OCR:</strong> Scale picture scanning and digit recognition are performed <strong>100% on-device</strong> using bundled local machine learning models. No camera captures, gallery files, or recognized values are ever uploaded, streamed, or processed on external cloud servers.</li>
+            </ul>
+
+            <h2>2. Information We Access and How It Is Used</h2>
+            <p>To deliver the Application's features, we require access to certain device resources. These permissions are used exclusively to process actions locally in real-time:</p>
+            <ul>
+                <li><strong>Camera Access:</strong> Used solely to capture physical scale display photos for automated weight OCR parsing. These images live strictly inside volatile memory during recognition and are never cached or saved.</li>
+                <li><strong>Gallery / Storage Access:</strong> Used to let you select existing scale photos from your photo library. Files are parsed locally and never uploaded.</li>
+                <li><strong>Body Metrics and Preferences:</strong> Stored locally to render trend charts and schedule daily local notification reminders.</li>
+            </ul>
+
+            <h2>3. Data Collection and Third-Party Sharing</h2>
+            <ul>
+                <li><strong>Personal Data Collection:</strong> We collect <strong>zero</strong> personal identification information (no names, no emails, no accounts, no phone numbers).</li>
+                <li><strong>Third-Party Trackers:</strong> WeightSnap contains <strong>no analytics, no crash reporters, and no advertising SDKs</strong> that track your behavior across other apps or websites.</li>
+                <li><strong>Data Sharing:</strong> We do not, and physically cannot, sell, trade, or transfer any data to third parties, as we do not collect or possess it in any centralized system.</li>
+            </ul>
+
+            <h2>4. Security of Your Data</h2>
+            <p>Because your data is stored entirely on your own physical device, the security of your metrics depends on your device's operating system security (Android/iOS). We recommend securing your device with a PIN, Pattern, Passcode, or Biometric Lock (Face ID / Touch ID) to prevent unauthorized local access to your weight history.</p>
+
+            <h2>5. App Store & Google Play Developer Policy Compliance</h2>
+            <p>This Privacy Policy is designed to comply fully with:</p>
+            <ul>
+                <li>Apple App Store Review Guidelines (Section 5.1 - Privacy)</li>
+                <li>Google Play Developer Distribution Agreement (User Data Policy)</li>
+                <li>General Data Protection Regulation (GDPR - Privacy by Design)</li>
+                <li>California Consumer Privacy Act (CCPA)</li>
+            </ul>
+            <p>Since no data is collected, you have absolute ownership over your data. You can delete all history instantly at any time by simply deleting/uninstalling the Application from your device.</p>
+
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions, suggestions, or feedback regarding this local privacy policy, feel free to contact us through our official repository issue tracker.</p>
+        </main>
+
+        <footer>
+            &copy; 2026 WeightSnap. Built for ultimate local privacy.
+        </footer>
+    </div>
+</body>
+</html>
