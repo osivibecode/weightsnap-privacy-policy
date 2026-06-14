@@ -168,69 +168,102 @@
     </style>
 </head>
 <body>
-<div class="container">
-    <header>
-        <span class="logo-icon">⚖️</span>
-        <h1>WeightSnap</h1>
-        <div class="subtitle">Privacy Policy</div>
-    </header>
+    <div class="container">
+        <header>
+            <span class="logo-icon">⚖️</span>
+            <h1>WeightSnap</h1>
+            <div class="subtitle">Privacy Policy</div>
+        </header>
 
-    <main class="card">
-        <p><strong>Last Updated: May 17, 2026</strong></p>
+        <main class="card">
+            <p><strong>Last Updated: June 14, 2026</strong></p>
+            
+            <p>WeightSnap (referred to as "the Application", "we", "us", or "our") is a local-first weight and body metric tracking application built to respect and protect your privacy.</p>
 
-        <p>WeightSnap (referred to as "the Application", "we", "us", or "our") is a local-first weight and body metric tracking application built to respect and protect your privacy.</p>
+            <p>This Privacy Policy explains how your information is handled. Unlike traditional fitness applications, <strong>WeightSnap stores all your tracking records locally on your device, and does not require registration or personal identification details.</strong></p>
 
-        <p>This Privacy Policy explains how your information is handled. Unlike traditional fitness applications, <strong>WeightSnap stores all your tracking records locally on your device, and does not require registration or personal identification details.</strong></p>
+            <div class="highlight-box">
+                Core Philosophy: Your health metrics are personal. Your database remains 100% on your device, with optional AI Coach insights requested only on-demand. (Note: AI Coach suggestions are for informational and educational purposes only; the AI is not a doctor or professional trainer).
+            </div>
 
-        <div class="highlight-box">
-            Core Philosophy: Your health metrics are personal. Your database remains 100% on your device, with optional AI Coach insights requested only on-demand. (Note: AI Coach suggestions are for informational and educational purposes only; the AI is not a doctor or professional trainer).
-        </div>
+            <h2>1. Data Storage & AI Processing Architecture</h2>
+            <p>WeightSnap is engineered with a privacy-conscious local-first architecture:</p>
+            <ul>
+                <li><strong>Local Database:</strong> All body metric history (weight, waist measurements, custom parameter logs, timestamps, age, and gender) is saved directly onto your device's internal SQLite database via secure, localized application sandbox storage. We do not back up this database to our servers.</li>
+                <li><strong>On-Device OCR:</strong> Scale display picture scanning and digit recognition are performed **100% on-device** using local machine learning models (Apple Vision on iOS and Google ML Kit on Android). No camera captures or library photos are ever uploaded or processed externally.</li>
+                <li><strong>Optional AI Coach (On-Demand Transmission):</strong> When you explicitly request AI insights (e.g. week-over-week trends or metric correlations), the Application transmits your recent logged metrics (weight, waist readings, custom parameters, descriptions, age, gender, and unit preferences) to our secure AI proxy API endpoint. This data is processed transiently to generate your report, is not associated with any personal identifiers, and is not stored permanently on our servers.</li>
+            </ul>
 
-        <h2>1. Data Storage & AI Processing Architecture</h2>
-        <p>WeightSnap is engineered with a privacy-conscious local-first architecture:</p>
-        <ul>
-            <li><strong>Local Database:</strong> All body metric history (weight, waist measurements, custom parameter logs, timestamps, age, and gender) is saved directly onto your device's internal SQLite database via secure, localized application sandbox storage. We do not back up this database to our servers.</li>
-            <li><strong>On-Device OCR:</strong> Scale display picture scanning and digit recognition are performed **100% on-device** using local machine learning models (Apple Vision on iOS and Google ML Kit on Android). No camera captures or library photos are ever uploaded or processed externally.</li>
-            <li><strong>Optional AI Coach (On-Demand Transmission):</strong> When you explicitly request AI insights (e.g. week-over-week trends or metric correlations), the Application transmits your recent logged metrics (weight, waist readings, custom parameters, descriptions, age, gender, and unit preferences) to our secure AI proxy API endpoint. This data is processed transiently to generate your report, is not associated with any personal identifiers, and is not stored permanently on our servers.</li>
-        </ul>
+            <h2>2. Health Connect & Apple Health Integration</h2>
+            <p>WeightSnap can optionally read health data you have already stored in <strong>Android
+                Health Connect</strong> or <strong>Apple Health</strong> (for example, data synced
+                there from Garmin or other devices). This integration is strictly read-only and
+                entirely optional.</p>
+            <ul>
+                <li><strong>Data we read:</strong> body weight, body fat percentage, and step
+                    counts. We never write, modify, or delete data in Health Connect or Apple
+                    Health.
+                </li>
+                <li><strong>Why we read it:</strong> solely to import these values into your local
+                    WeightSnap history so your charts and trends stay up to date without manual
+                    entry.
+                </li>
+                <li><strong>Explicit consent:</strong> reading occurs only after you grant
+                    permission through the system Health Connect / Apple Health permission screen,
+                    and only when you tap "Import from Health" or, once granted, on app launch.
+                </li>
+                <li><strong>Where it goes:</strong> imported values are saved only to your on-device
+                    database. They are not transmitted to our servers. They may be included in an AI
+                    Coach request <em>only</em> if you separately and explicitly trigger the AI
+                    Coach, in the same anonymized manner as your other metrics (see Section 1).
+                </li>
+                <li><strong>No advertising use:</strong> data obtained from Health Connect or Apple
+                    Health is never used for advertising, never sold, and never shared with third
+                    parties.
+                </li>
+                <li><strong>Revoking access:</strong> you can revoke this permission at any time in
+                    Health Connect (Android) or the Apple Health app (iOS); WeightSnap will simply
+                    stop importing.
+                </li>
+            </ul>
 
-        <h2>2. Information We Access and How It Is Used</h2>
-        <p>To deliver the Application's features, we require access to certain device resources. These permissions are used exclusively to process actions:</p>
-        <ul>
-            <li><strong>Camera Access:</strong> Used solely to capture physical scale display photos for automated weight OCR parsing. These images live strictly inside volatile memory during recognition and are never cached, saved, or uploaded.</li>
-            <li><strong>Gallery / Storage Access:</strong> Used to let you select existing scale photos from your photo library. Files are parsed locally and never uploaded.</li>
-            <li><strong>Body Metrics and Preferences:</strong> Stored locally to render trend charts and schedule daily local notification reminders. Selected metrics are sent externally only if you choose to trigger the AI Coach.</li>
-        </ul>
+            <h2>3. Information We Access and How It Is Used</h2>
+            <p>To deliver the Application's features, we require access to certain device resources. These permissions are used exclusively to process actions:</p>
+            <ul>
+                <li><strong>Camera Access:</strong> Used solely to capture physical scale display photos for automated weight OCR parsing. These images live strictly inside volatile memory during recognition and are never cached, saved, or uploaded.</li>
+                <li><strong>Gallery / Storage Access:</strong> Used to let you select existing scale photos from your photo library. Files are parsed locally and never uploaded.</li>
+                <li><strong>Body Metrics and Preferences:</strong> Stored locally to render trend charts and schedule daily local notification reminders. Selected metrics are sent externally only if you choose to trigger the AI Coach.</li>
+            </ul>
 
-        <h2>3. Data Collection and Third-Party Sharing</h2>
-        <ul>
-            <li><strong>Personal Data Collection:</strong> We collect <strong>zero</strong> personal identification information (no names, no emails, no accounts, no phone numbers).</li>
-            <li><strong>Third-Party AI Processing:</strong> Utilizing the AI Coach sends your anonymized metrics to our backend proxy to query language models (such as OpenRouter or Gemini API) for generating coaching insights.</li>
-            <li><strong>Third-Party Advertising (Google AdMob):</strong> WeightSnap integrates the Google AdMob SDK to display ads. Google AdMob may collect and process device identifiers (such as the Advertising ID / AD_ID) to personalize ads and analyze performance. You can manage or disable ad personalization inside your Google Account and device settings.</li>
-            <li><strong>Third-Party Trackers:</strong> WeightSnap contains no other analytics, crash reporters, or third-party behavior trackers.</li>
-            <li><strong>Data Sharing:</strong> We do not sell, trade, or transfer your personal data to any other third parties.</li>
-        </ul>
+            <h2>4. Data Collection and Third-Party Sharing</h2>
+            <ul>
+                <li><strong>Personal Data Collection:</strong> We collect <strong>zero</strong> personal identification information (no names, no emails, no accounts, no phone numbers).</li>
+                <li><strong>Third-Party AI Processing:</strong> Utilizing the AI Coach sends your anonymized metrics to our backend proxy to query language models (such as OpenRouter or Gemini API) for generating coaching insights.</li>
+                <li><strong>Third-Party Advertising (Google AdMob):</strong> WeightSnap integrates the Google AdMob SDK to display ads. Google AdMob may collect and process device identifiers (such as the Advertising ID / AD_ID) to personalize ads and analyze performance. You can manage or disable ad personalization inside your Google Account and device settings.</li>
+                <li><strong>Third-Party Trackers:</strong> WeightSnap contains no other analytics, crash reporters, or third-party behavior trackers.</li>
+                <li><strong>Data Sharing:</strong> We do not sell, trade, or transfer your personal data to any other third parties.</li>
+            </ul>
 
-        <h2>4. Security of Your Data</h2>
-        <p>Because your data is stored entirely on your own physical device, the security of your metrics depends on your device's operating system security (Android/iOS). We recommend securing your device with a PIN, Pattern, Passcode, or Biometric Lock (Face ID / Touch ID) to prevent unauthorized local access to your weight history.</p>
+            <h2>5. Security of Your Data</h2>
+            <p>Because your data is stored entirely on your own physical device, the security of your metrics depends on your device's operating system security (Android/iOS). We recommend securing your device with a PIN, Pattern, Passcode, or Biometric Lock (Face ID / Touch ID) to prevent unauthorized local access to your weight history.</p>
 
-        <h2>5. App Store & Google Play Developer Policy Compliance</h2>
-        <p>This Privacy Policy is designed to comply fully with:</p>
-        <ul>
-            <li>Apple App Store Review Guidelines (Section 5.1 - Privacy)</li>
-            <li>Google Play Developer Distribution Agreement (User Data Policy)</li>
-            <li>General Data Protection Regulation (GDPR - Privacy by Design)</li>
-            <li>California Consumer Privacy Act (CCPA)</li>
-        </ul>
-        <p>Since no data is collected, you have absolute ownership over your data. You can delete all history instantly at any time by simply deleting/uninstalling the Application from your device.</p>
+            <h2>6. App Store & Google Play Developer Policy Compliance</h2>
+            <p>This Privacy Policy is designed to comply fully with:</p>
+            <ul>
+                <li>Apple App Store Review Guidelines (Section 5.1 - Privacy)</li>
+                <li>Google Play Developer Distribution Agreement (User Data Policy)</li>
+                <li>General Data Protection Regulation (GDPR - Privacy by Design)</li>
+                <li>California Consumer Privacy Act (CCPA)</li>
+            </ul>
+            <p>Since no data is collected, you have absolute ownership over your data. You can delete all history instantly at any time by simply deleting/uninstalling the Application from your device.</p>
 
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions, suggestions, or feedback regarding this local privacy policy, feel free to contact us through our official repository issue tracker.</p>
-    </main>
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions, suggestions, or feedback regarding this local privacy policy, feel free to contact us through our official repository issue tracker.</p>
+        </main>
 
-    <footer>
-        &copy; 2026 WeightSnap. Built for ultimate local privacy.
-    </footer>
-</div>
+        <footer>
+            &copy; 2026 WeightSnap. Built for ultimate local privacy.
+        </footer>
+    </div>
 </body>
 </html>
